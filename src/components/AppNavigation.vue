@@ -1,6 +1,6 @@
 <template>
-  <v-app>
-    <v-navigation-drawer app v-model="isSideBar">
+    <span>
+      <v-navigation-drawer app v-model="isSideBar">
       <v-list>
         <v-list-tile v-for="item in menuItems" :key="item.title" router :to="item.link"> 
           <v-list-tile-action>
@@ -11,7 +11,7 @@
       </v-list>
     </v-navigation-drawer>
     
-  <v-toolbar dark color="pink darken-1">
+  <v-toolbar app dark color="pink darken-1">
       <v-toolbar-side-icon @click.native.stop=" isSideBar = !isSideBar" class="hidden-sm-and-up"></v-toolbar-side-icon>
       <v-toolbar-title>
        <router-link to="/" tag="span" style="cursor: pointer">DevMeetUp</router-link>
@@ -26,14 +26,11 @@
           </v-icon>{{item.title}}</v-btn>
       </v-toolbar-items >
     </v-toolbar>
-    <router-view></router-view>
-  </v-app>
-  
+     <main><router-view></router-view></main>
+    </span>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
 export default {
   name: 'App',
   components: {
@@ -49,7 +46,8 @@ export default {
         {icons: "face", title: "Sign Up", link: "/signup"},
         {icons: "lock_open", title: "Sign In", link: "/signin"}
       ]
-    };
+    }
   }
-};
+}
 </script>
+
