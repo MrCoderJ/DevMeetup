@@ -11,7 +11,7 @@ export const store = new Vuex.Store({
                 imageUrl: "https://www.goodfreephotos.com/albums/singapore/singapore-buildings-skyscrapers-skyline.jpg",
                 id: "d23232",
                 title: "Meetup in California",
-                date: "2019-04-13",
+                date: new Date(),
                 location: "New Zeland",
                 description: "Meetup in south Africa"
             },
@@ -19,7 +19,7 @@ export const store = new Vuex.Store({
                 imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXuwMukU39aGDdLY9D-SE-mMnaHnElsV-mMrzUbsWx_G_Q7cmU",
                 id: "asd234",
                 title: "Meetup in Diego",
-                date: "2020-04-19",
+                date: new Date(),
                 location: "San Deigo",
                 description: "Meetup in south Africa"
             },
@@ -27,7 +27,7 @@ export const store = new Vuex.Store({
                 imageUrl: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Singapore_Skyline_at_Night_with_Black_Sky.JPG",
                 id: "edd233",
                 title: "Meetup in Toronto",
-                date: "2019-06-29",
+                date: new Date(),
                 location: "cape Town",
                 description: "Meetup in south Africa"
             }
